@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Pedidos de Marmitas Fit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gerenciador de Pedidos de Marmitas Fit</h1>
+
+    <div>
+        <input type="text" id="cliente" placeholder="Nome do Cliente">
+        
+        <select id="tipo">
+            <option value="Low Carb">Low Carb</option>
+            <option value="Vegetariana">Vegetariana</option>
+            <option value="Tradicional">Tradicional</option>
+        </select>
+
+        <input type="number" id="quantidade" placeholder="Quantidade de marmitas" min="1">
+
+        <label><input type="checkbox" value="Sem glúten" class="restricao"> Sem glúten</label>
+        <label><input type="checkbox" value="Sem lactose" class="restricao"> Sem lactose</label>
+
+        <button onclick="salvarPedido()" class="btn">Registrar Pedido</button>
+        <p id="feedback"></p>
+    </div>
+
+    <table id="tabelaPedidos">
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Tipo</th>
+                <th>Qtde</th>
+                <th>Restrições</th>
+                <th>Valor Total</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+   <script src="script.js"></script>
+</body>
+</html>

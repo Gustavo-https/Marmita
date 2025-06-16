@@ -1,0 +1,46 @@
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9fef9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2e7d32;
+        }
+        input, select, button {
+            margin: 5px 0;
+            padding: 8px;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        .success {
+            color: green;
+        }
+        .btn {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-edit {
+            background-color: #ff9800;
+            color: white;
+            padding: 5px;
+        }
+        .btn-delete {
+            background-color: #f44336;
+            color: white;
+            padding: 5px;
+        }
